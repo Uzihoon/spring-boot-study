@@ -23,7 +23,7 @@ public class HelloControllerTest {
 
 
     @Test
-    public void hello가_리턴된다() throws Exception {
+    public void returnHello() throws Exception {
         String hello = "hello";
 
         mvc.perform(get("/hello"))
@@ -31,7 +31,7 @@ public class HelloControllerTest {
                 .andExpect(content().string(hello));
     }
     @Test
-    public void helloDto가_리턴된다() throws Exception {
+    public void returnHelloDto() throws Exception {
         String name = "hello";
         int amount = 1000;
 
